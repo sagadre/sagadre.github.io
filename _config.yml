@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : ""
+title                    : "Gadre"
 title_separator          : "-"
 name                     : &name "Samir Yitzhak Gadre"
 description              : &description "Software Engineer II @ Microsoft HoloLens | Incoming C.S. Ph.D. Student @ Columbia"
