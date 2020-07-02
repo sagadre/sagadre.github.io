@@ -1,20 +1,11 @@
 ---
-title: "Teaching experience 1"
+title: "CS 15: Introduction to Object Oriented Programming"
 collection: teaching
-type: "Undergraduate course"
-permalink: /teaching/2014-spring-teaching-1
-venue: "University 1, Department"
+type: "TA"
+permalink: /teaching/cs15
+venue: "Brown University"
 date: 2014-01-01
-location: "City, Country"
+location: "Providence, RI"
 ---
 
-This is a description of a teaching experience. You can use markdown like any other post.
-
-Heading 1
-======
-
-Heading 2
-======
-
-Heading 3
-======
+Held office hours to help students understand object oriented paradigms and debug code. Graded code based on functionality and style.
