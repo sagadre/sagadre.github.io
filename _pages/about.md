@@ -15,3 +15,5 @@ Before Columbia, I was a software engineer at [Microsoft HoloLens](https://www.m
 Prior to Microsoft, I was a Computer Science undergrad at Brown University. I was lucky to work with [George Konidaris](https://cs.brown.edu/~gdk/) and [Stefanie Tellex](https://cs.brown.edu/people/stellex/index.html) on my senior honors thesis: [Teaching Robots Using Mixed Reality](http://cs.brown.edu/research/pubs/theses/ugrad/2018/gadre.samir.pdf). As an undergrad, I also enjoyed TAing introductory Computer Science courses.
 
 I am from Louisville, KY. I love to play ultimate, run, read, hike, and watch movies.
+
+[cv](gadre_cv.pdf)
