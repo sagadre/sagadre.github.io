@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : ""
 title_separator          : "-"
 name                     : &name "Samir Yitzhak Gadre"
-description              : &description "Software Engineer II @ Microsoft HoloLens | Incoming C.S. Ph.D. Student @ Columbia"
+description              : &description "C.S. Ph.D. Student @ Columbia"
 url                      : https://sagadre.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "sagadre/sagadre.github.io"
@@ -87,7 +87,7 @@ author:
   employer         :
   pubmed           :
   googlescholar    : "http://scholar.google.com/citations?user=oAhlg9gAAAAJ&hl=en"
-  email            :
+  email            : "sy at cs dot columbia dot edu"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
