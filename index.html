@@ -21,15 +21,15 @@
                 <name>Samir Yitzhak Gadre</name>
               </p>
               <p>
-                I am a 1st year Ph.D. student at Columbia University working remotely from beautiful Seattle. I am interested in embodied and 3D computer vision. I am privileged to be advised by <a href="https://www.cs.columbia.edu/~shurans/">Shuran Song</a> and fortunate to collaborate with <a href="https://ehsanik.github.io/">Kiana Ehsani</a>.
+                I am a 2nd year Ph.D. student at Columbia University interested in embodied vision, multimodal learning, and representation learning. I am privileged to be advised by <a href="https://www.cs.columbia.edu/~shurans/">Shuran Song</a> and fortunate to collaborate with <a href="https://ehsanik.github.io/">Kiana Ehsani</a>.
               </p>
-                Before Columbia, I was a software engineer at <a href="https://www.microsoft.com/en-us/hololens">Microsoft HoloLens</a>. I was on the Object Understanding team, where I was lucky to work with <a href="https://www.linkedin.com/in/harpreet-sawhney-2b024b28/">Harpreet Sawhney</a> and <a href="https://www.linkedin.com/in/ning-xu-5a687896/">Ning Xu</a> on recently released <a href="https://techcommunity.microsoft.com/t5/mixed-reality-blog/azure-object-anchors-is-now-in-private-preview/ba-p/1696157">Azure Object Anchors</a>. With their support, I developed a passion for computer vision.
+                Before Columbia, I was a software engineer at <a href="https://www.microsoft.com/en-us/hololens">Microsoft HoloLens</a>. I was on the Object Understanding team, where I was lucky to work with <a href="https://www.linkedin.com/in/harpreet-sawhney-2b024b28/">Harpreet Sawhney</a> and <a href="https://www.linkedin.com/in/ning-xu-5a687896/">Ning Xu</a> on <a href="https://azure.microsoft.com/en-us/services/object-anchors/#overview">Object Anchors</a>. With their support, I developed a passion for computer vision.
               <p>
-                Prior to Microsoft, I was a Computer Science undergrad at Brown University. I was lucky to work with <a href="http://cs.brown.edu/people/gdk/">George Konidaris</a> and <a href="http://cs.brown.edu/people/stellex/">Stefanie Tellex</a> on robot programming and learning from demonstration.
+                Prior to Microsoft, I was a Computer Science undergrad at Brown University. I had a fantastic experience working with <a href="http://cs.brown.edu/people/gdk/">George Konidaris</a> and <a href="http://cs.brown.edu/people/stellex/">Stefanie Tellex</a> on robot programming and learning from demonstration.
               </p>
               <p style="text-align:center">
                 <a href="mailto:sy@cs.columbia.edu">Email</a> &nbsp|&nbsp
-                <a href="data/gadre_cv.pdf">CV</a> &nbsp|&nbsp
+                <!-- <a href="data/gadre_cv.pdf">CV</a> &nbsp|&nbsp -->
                 <a href="https://scholar.google.com/citations?user=oAhlg9gAAAAJ&hl=en">Google Scholar</a> &nbsp|&nbsp
                 <a href="https://twitter.com/sy_gadre">Twitter</a> &nbsp|&nbsp
                 <a href="https://github.com/sagadre">Github</a>
@@ -52,6 +52,8 @@
         </tbody></table>
         <table width="100%" align="center" border="0" cellpadding="20"><tbody>
           <ul>
+            <li>[June 2021] Started an internship with the amazing folks at <a href="https://prior.allenai.org/">AI2 PRIOR</a>.
+            <li>[May 2021] New preprint: <a href="https://arxiv.org/abs/2105.01047">Act the Part</a>. (Update: appearing at ICCV 2021).
             <li>[Sept 2020] Joined Shuran Song's group at Columbia. Excited to be a Ph.D. student!</li>
             <li>[July 2020] Promoted to Software Engineer II at Microsoft HoloLens.</li>
             <li>[May 2019] Presented our robot programing mixed reality work at ICRA 2019.</li>
@@ -60,7 +62,6 @@
             <li>[May 2018] Graduated from Brown with an Sc.B. in computer science (with honors) and an A.B. in engineering.</li>
           </ul>
         </tbody></table>
-
 
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -74,20 +75,30 @@
 
           <tr onmouseout="end_user_stop()" onmouseover="end_user_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <div id='end_user_anim' class='hidden'><img src="images/end_user.gif" class=gif data-mode="video" ></div>
-              <div id='end_user_still'><img src="images/end_user_still.jpg"></div>
-              <script type="text/javascript">
-                function end_user_start() {
-                  document.getElementById('end_user_anim').style.display = 'inline';
-                  document.getElementById('end_user_still').style.display = 'none';
-                }
+              <img src="images/atp.jpeg">
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2105.01047">
+                <papertitle>Act the Part: Learning Interaction Strategies for Articulated Object Part Discovery</papertitle>
+              </a>
+              <br>
+              <strong>Samir Yitzhak Gadre</strong>,
+              <a href="https://ehsanik.github.io/">Kiana Ehsani</a>, &
+              <a href="https://www.cs.columbia.edu/~shurans/">Shuran Song</a>
+              <br>
+              <em>ICCV</em>, 2021
+              <br>
+              <a href="data/gadre2021act.bib">bibtex</a> |
+              <a href="https://atp.cs.columbia.edu/">website (with demo!)</a>
+              <p>
+                We learn multi-step interaction with articulated objects to (1) discover the number of parts and (2) find part segmentation masks, all without semantic labels.
+              </p>
+            </td>
+          </tr>
 
-                function end_user_stop() {
-                  document.getElementById('end_user_anim').style.display = 'none';
-                  document.getElementById('end_user_still').style.display = 'inline';
-                }
-                end_user_stop()
-              </script>
+          <tr onmouseout="end_user_stop()" onmouseover="end_user_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/end_user.gif">
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
               <a href="http://cs.brown.edu/people/gdk/pubs/end_user_prog_mr.pdf">
@@ -113,20 +124,7 @@
 
           <tr onmouseout="lfd_stop()" onmouseover="lfd_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <div id='lfd_anim' class='hidden'><img src="images/lfd.gif"></div>
-              <div id='lfd_still'><img src="images/lfd_still.jpg"></div>
-              <script type="text/javascript">
-                function lfd_start() {
-                  document.getElementById('lfd_anim').style.display = 'inline';
-                  document.getElementById('lfd_still').style.display = 'none';
-                }
-
-                function lfd_stop() {
-                  document.getElementById('lfd_anim').style.display = 'none';
-                  document.getElementById('lfd_still').style.display = 'inline';
-                }
-                lfd_stop()
-              </script>
+              <img src="images/lfd.gif">
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
               <a href="http://cs.brown.edu/research/pubs/theses/ugrad/2018/gadre.samir.pdf">
