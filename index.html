@@ -21,7 +21,7 @@
                 <name>Samir Yitzhak Gadre</name>
               </p>
               <p>
-                I am a 2nd year Ph.D. student at Columbia University interested in embodied vision, multimodal learning, and representation learning. I am privileged to be advised by <a href="https://www.cs.columbia.edu/~shurans/">Shuran Song</a> and fortunate to collaborate with <a href="https://ehsanik.github.io/">Kiana Ehsani</a>.
+                I am a 2nd year Ph.D. student at Columbia University interested in how to adapt models pre-trained on internet data to embodied settings (e.g., navigation and manipulation). I am privileged to be advised by <a href="https://www.cs.columbia.edu/~shurans/">Shuran Song</a>. I am also lucky to receive mentorship from <a href="https://ehsanik.github.io/">Kiana Ehsani</a> and <a href="https://roozbehm.info/">Roozbeh Mottaghi</a>.
               </p>
                 Before Columbia, I was a software engineer at <a href="https://www.microsoft.com/en-us/hololens">Microsoft HoloLens</a>. I was on the Object Understanding team, where I was lucky to work with <a href="https://www.linkedin.com/in/harpreet-sawhney-2b024b28/">Harpreet Sawhney</a> and <a href="https://www.linkedin.com/in/ning-xu-5a687896/">Ning Xu</a> on <a href="https://azure.microsoft.com/en-us/services/object-anchors/#overview">Object Anchors</a>. With their support, I developed a passion for computer vision.
               <p>
@@ -52,6 +52,8 @@
         </tbody></table>
         <table width="100%" align="center" border="0" cellpadding="20"><tbody>
           <ul>
+            <li>[Mar 2022] New preprint: <a href="https://arxiv.org/abs/2203.05482">Model soups</a>.
+            <li>[Mar 2022] Continuous Scene Representations, a collaboration with AI2, accepted to CVPR 2022 (in person)!
             <li>[June 2021] Started an internship with the amazing folks at <a href="https://prior.allenai.org/">AI2 PRIOR</a>.
             <li>[May 2021] New preprint: <a href="https://arxiv.org/abs/2105.01047">Act the Part</a>. (Update: appearing at ICCV 2021).
             <li>[Sept 2020] Joined Shuran Song's group at Columbia. Excited to be a Ph.D. student!</li>
@@ -67,11 +69,70 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Research</heading>
+              <heading>Publications and Pre-Prints</heading>
+              <br> (* indicates equal contribution)
             </td>
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+          <tr onmouseout="end_user_stop()" onmouseover="end_user_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/soup.jpeg" width="180" height="120">
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2203.05482">
+                <papertitle>Model soups: averaging weights of multiple fine-tuned models improves accuracy without
+                  increasing inference time</papertitle>
+              </a>
+              <br>
+              <a href="https://mitchellnw.github.io/">Mitchell Wortsman</a>,
+              <a href="http://gabrielilharco.com/">Gabriel Ilharco</a>,
+              <strong>Samir Yitzhak Gadre</strong>,
+              <a href="https://twitter.com/beccaroelofs">Rebecca Roelofs</a>,
+              <a href="https://raphagl.com/">Raphael Gontijo-Lopes</a>,
+              <a href="http://www.arimorcos.com/">Ari S. Morcos</a>,
+              <a href="https://hsnamkoong.github.io/">Hongseok Namkoong</a>,
+              <a href="https://homes.cs.washington.edu/~ali/">Ali Farhadi</a>,
+              <a href="https://www.cs.tau.ac.il/~ycarmon/">Yair Carmon*</a>,
+              <a href="https://simonster.com/">Simon Kornblith*</a>,
+              <a href="https://people.csail.mit.edu/ludwigs/">Ludwig Schmidt*</a>
+              <br>
+              <em>arXiv</em>, 2022
+              <br>
+              <a href="data/wortsman2022soups.bib">bibtex</a> | Coming soon!
+              <!-- <a href="https://atp.cs.columbia.edu/">website (with demo!)</a> -->
+              <p>
+                We average the weights of many models (ingredients) fine-tuned with different hyperparameters. The resulting soup outperforms the individual ingredients.
+              </p>
+            </td>
+          </tr>
+
+          <tr onmouseout="end_user_stop()" onmouseover="end_user_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/csr.jpg" width="180"
+              height="120">
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <!-- <a href="https://arxiv.org/abs/2105.01047"> -->
+                <papertitle>Continuous Scene Representations for Embodied AI</papertitle>
+              <!-- </a> -->
+              <br>
+              <strong>Samir Yitzhak Gadre</strong>,
+              <a href="https://ehsanik.github.io/">Kiana Ehsani</a>,
+              <a href="https://www.cs.columbia.edu/~shurans/">Shuran Song</a>,
+              <a href="https://roozbehm.info/">Roozbeh Mottaghi</a>
+              <br>
+              <em>CVPR</em>, 2022
+              <br>
+              <a href="data/gadre2022csr.bib">bibtex</a> | Coming soon!
+              <!-- <a href="https://atp.cs.columbia.edu/">website (with demo!)</a> -->
+              <p>
+                We employ a contrastive loss to embed relationships between objects as features. We show how our representation can be used downstream for visual room rearrangement without any additional training.
+                <!-- We learn multi-step interaction with articulated objects to (1) discover the number of parts and (2) find part segmentation masks, all without semantic labels. -->
+              </p>
+            </td>
+          </tr>
 
           <tr onmouseout="end_user_stop()" onmouseover="end_user_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
@@ -83,7 +144,7 @@
               </a>
               <br>
               <strong>Samir Yitzhak Gadre</strong>,
-              <a href="https://ehsanik.github.io/">Kiana Ehsani</a>, &
+              <a href="https://ehsanik.github.io/">Kiana Ehsani</a>,
               <a href="https://www.cs.columbia.edu/~shurans/">Shuran Song</a>
               <br>
               <em>ICCV</em>, 2021
@@ -109,7 +170,7 @@
               <a href="http://cs.brown.edu/people/er35/">Eric Rosen</a>,
               <a href="https://www.linkedin.com/in/garychien/">Gary Chien</a>,
               <a href="https://www.elizabethkphillips.com/">Elizabeth Phillips</a>,
-              <a href="http://cs.brown.edu/people/stellex/">Stefanie Tellex</a>, &
+              <a href="http://cs.brown.edu/people/stellex/">Stefanie Tellex</a>,
               <a href="http://cs.brown.edu/people/gdk/">George Konidaris</a>
               <br>
               <em>ICRA</em>, 2019
@@ -196,7 +257,7 @@
               <br>
               <br>
               <p style="text-align:right;font-size:small;">
-                Template modified from <a href="https://github.com/jonbarron/jonbarron_website">here</a>.
+                Template modified from the <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron</a> original.
               </p>
             </td>
           </tr>
