@@ -10,7 +10,7 @@
   <link rel="icon" type="image/png" href="images/seal_icon.ico">
 </head>
 
-<body>
+<body onload="toggleNews();toggleNews()">
   <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
     <tr style="padding:0px">
       <td style="padding:0px">
@@ -28,11 +28,11 @@
                 Prior to Microsoft, I was a Computer Science undergrad at Brown University. I had a fantastic experience working with <a href="http://cs.brown.edu/people/gdk/">George Konidaris</a> and <a href="http://cs.brown.edu/people/stellex/">Stefanie Tellex</a> on robot programming and learning from demonstration.
               </p>
               <p style="text-align:center">
-                <a href="mailto:sy@cs.columbia.edu">Email</a> &nbsp|&nbsp
+                <a href="mailto:sy@cs.columbia.edu">Email</a> &nbsp/&nbsp
                 <!-- <a href="data/gadre_cv.pdf">CV</a> &nbsp|&nbsp -->
-                <a href="https://scholar.google.com/citations?user=oAhlg9gAAAAJ&hl=en">Google Scholar</a> &nbsp|&nbsp
-                <a href="https://twitter.com/sy_gadre">Twitter</a> &nbsp|&nbsp
-                <a href="data/gadre_cv.pdf">CV</a>
+                <a href="https://scholar.google.com/citations?user=oAhlg9gAAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
+                <a href="https://twitter.com/sy_gadre">Twitter</a>
+                <!-- <a href="data/gadre_cv.pdf">CV</a> -->
               </p>
             </td>
             <td style="padding:2.5%;width:40%;max-width:40%">
@@ -58,12 +58,18 @@
             <li>[June 2021] Started an internship with the amazing folks at <a href="https://prior.allenai.org/">AI2 PRIOR</a>.
             <li>[May 2021] New preprint: <a href="https://arxiv.org/abs/2105.01047">Act the Part</a>. (Update: appearing at ICCV 2021).
             <li>[Sept 2020] Joined Shuran Song's group at Columbia. Excited to be a Ph.D. student!</li>
+            <span id="moreNews">
             <li>[July 2020] Promoted to Software Engineer II at Microsoft HoloLens.</li>
             <li>[May 2019] Presented our robot programing mixed reality work at ICRA 2019.</li>
             <li>[Feb 2019] Joined the Object Understanding team at Microsoft HoloLens.</li>
             <li>[Oct 2018] Spoke at the <a href="https://robotics.cs.washington.edu/colloquium/archive/18au/">University of Washington robotics colloquium</a> about mixed reality human-robot interaction.</li>
             <li>[May 2018] Graduated from Brown with an Sc.B. in computer science (with honors) and an A.B. in engineering.</li>
+            </span>
+            <div onclick="toggleNews()" id="moreNewsBtn" class="showBtn"><a>Show more...</a></div>
+            <div onclick="toggleNews()" id="lessNewsBtn" class="showBtn"><a>Show less...</a></div>
+            <div style="clear: both;"></div>
           </ul>
+
         </tbody></table>
 
 
@@ -238,12 +244,19 @@
         </tbody></table>
         <table width="100%" align="center" border="0" cellpadding="20"><tbody>
           <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle"><img src="images/cucs.gif"></td>
+            <td style="padding:20px;width:25%;vertical-align:middle"><img src="images/review.jpg" height="166", width="166"></td>
+            <td width="75%" valign="center">
+              ECCV 2020; ICML 2022; IROS 2022
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle"><img src="images/columbia.jpg" height="166", width="166"></td>
             <td width="75%" valign="center">
               Pre-submission Application Review (PAR); co-organizer, fall 2021.
               <br>
               <br>
-              <a href="https://cuwics.github.io/">WiCS</a>; mentor, fall 2020–current.
+              <a href="https://www.womeninscienceatcolumbia.org/">WiSC</a>; mentor, fall 2020, spring 2021.
               <br>
               <br>
               PAR; application reader, fall 2020.
@@ -291,6 +304,23 @@
       </td>
     </tr>
   </table>
+
+  <script>
+    function toggleNews() {
+      var moreNews = document.getElementById("moreNews");
+      var moreNewsBtn = document.getElementById("moreNewsBtn");
+      var lessNewsBtn = document.getElementById("lessNewsBtn");
+      if (moreNewsBtn.style.display === "none") {
+        moreNews.style.display = "none";
+        moreNewsBtn.style.display = "inline";
+        lessNewsBtn.style.display = "none";
+      } else {
+        moreNews.style.display = "inline";
+        moreNewsBtn.style.display = "none";
+        lessNewsBtn.style.display = "inline";
+      }
+    }
+  </script>
 </body>
 
 </html>
