@@ -1,0 +1,229 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>CoW goes moo!</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=1096">
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="shortcut icon" type="image/jpg" href="favicon.ico" />
+	<script>
+		(function (i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date(); a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+		ga('create', 'UA-89797207-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<script async="" src="./Horizontal Bar Chart_files/analytics.js"></script>
+	<script src="./Horizontal Bar Chart_files/Chart.bundle.js"></script>
+	<script src="./Horizontal Bar Chart_files/utils.js"></script>
+	<style>
+		canvas {
+			-moz-user-select: none;
+			-webkit-user-select: none;
+			-ms-user-select: none;
+		}
+
+		/* Create two equal columns that floats next to each other */
+		.column {
+			float: left;
+			width: 50%;
+			/* padding: 10px;
+			height: 300px; */
+			justify-content: center;
+			align-content: center;
+			/* Should be removed. Only for demonstration */
+		}
+
+		/* Clear floats after the columns */
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
+			align-content: center;
+			justify-content: center;
+			align-content: center;
+		}
+	</style>
+
+	<meta property="og:url" content="https://cow.cs.columbia.edu/" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="CLIP on Wheels" />
+	<meta property="og:description" content="Open-Vocabulary Models are (Almost) Zero-Shot Object Navigators" />
+
+
+</head>
+
+<body id="top">
+
+
+	<!-- Main -->
+	<div id="main"
+		style="padding-bottom:1em; padding-top: 5em; width: 74em; max-width: 74em; margin-left: auto; margin-right: auto;">
+		<section id="four">
+
+			<h1 style="text-align: center; margin-bottom: 0;">
+				<font color="4e79a7">CLIP on Wheels:</font>
+			</h1>
+			<h2 style="text-align: center;">Open-Vocabulary Models are (Almost) Zero-Shot Object Navigators</h2>
+			<!-- <h3 style="text-align: center;">International Conference on Computer Vision (ICCV) 2021</h3> -->
+
+			<span class="image top"
+				style="max-width: 100%; width:70%; margin-top: 2.5em; margin-bottom: 0.5em; display:block; margin-left: auto; margin-right: auto;">
+				<img src="images/diagram.svg" alt="" style="width: 100%; height: 100%;" />
+			</span>
+
+			<p align="justify">
+				<br>
+				Can open-vocabulary models like CLIP solve robotics tasks without being fine-tuned? We study this
+				question in the context of object navigation, where an agent must find a specified goal object. We
+				consider a zero-shot setting, where agents are not trained to navigate to the goal objects. To address
+				this task, we introduce the CLIP on Wheels (CoW) framework and evaluate many CoWs in both Habitat and
+				RoboTHOR embodied environments, which are visually and physically distinct. We find that a simple CoW,
+				with CLIP-based object localization plus classical exploration---and no additional
+				training---outperforms competing approaches in efficiency and robustness to dataset distribution shift.
+				On four categories considered in previous work, CoW shows a 16.1 percentage point improvement in success
+				over the state-of-the-art baseline that trains on in-domain data.
+				<br>
+			</p>
+
+			<hr style="margin-top: 0em;">
+			<h3>Demos</h3>
+			<p align="justify">
+				Our best navigator is built with components that are not directly trained in either Habitat or RoboTHOR.
+				However, to benchmark this CoW, we deploy can it <em>zero-shot</em> in both environments. Here we show
+				some sample trajectories to illustrate that our method is able to navigate to target objects in both
+				environments, even with zero steps of training beyond the CLIP initialization.
+			</p>
+
+			<hr style="margin-top: 0em;">
+			<h3>Robustness to domain-sift: benchmark results</h3>
+
+			<p align="justify">
+				We compare several CoWs, which are made of exploration and object localization modules. For exploration:
+				frontier-based exploration (<em>FBE</em>), exploration learned
+				in Habitat (<em>Hab.-Learn</em>), and exploration learned in RoboTHOR (<em>Robo.-Learn</em>).
+				For object localization: gradient-based (<em>Grad.-based</em>) and patch-based (<em>k-Patch</em>).
+				Moreover, we consider two CLIP prompting strategies. First "a photo of a {object} in a video game."
+				(<em>VG</em>). Second an 80 prompt ensemble introduced in the original CLIP work (<em>Ens.</em>).
+			</p>
+			<span class="image top"
+				style="max-width: 100%; width:80%; margin-top: 2.5em; margin-bottom: 0.5em; display:block; margin-left: auto; margin-right: auto;">
+				<img src="images/robustness_results.svg" alt="" style="width: 100%; height: 100%;" />
+			</span>
+			<!-- <span class="image right"
+				style="max-width: 100%; width:60%; margin-top: 2.5em; margin-bottom: 1.0em; ">
+				<img src="images/robustness_results.svg" alt="" style="width: 100%; height: 100%;" />
+			</span> -->
+
+
+
+			<p align="justify"></p>
+			<b>(left)</b> FBE CoWs are most robust to the domain shift and are not trained beyond their CLIP
+			initialization.
+			By contrast, CoWs with learnable exploration policies perform worse in environments where they are not
+			trained.
+			The superior performance of FBE CoWs suggests that the learned policies are sub-optimal for efficient object
+			navigation (i.e., low <em>SPL</em>).
+			<b>(right)</b>
+			We observe similar trends with <em>success</em> as with <em>SPL</em>.
+			While Hab.-Learn CoWs slightly outperform the best FBE CoW, these models are also less robust.
+			</p>
+
+			<hr style="margin-top: 0em;">
+			<h3>Code</h3>
+
+			<!-- <hr/> -->
+			<!-- <p style="margin-bottom: 1em;"><a href="https://github.com/mlfoundations/patching">[github]</a></p> -->
+			We are waiting to hear back from a conference before releasing code. Please check back soon and sorry for
+			any inconvenience!
+
+			<hr>
+			<h3>Team</h3>
+
+			<section>
+				<div class="box alt" style="margin-bottom: 1em;">
+					<div class="row 50% uniform" style="width: 90%;">
+						<div class="2u" style="font-size: 0.7em; line-height: 1.5em; text-align: center;"><a
+								href="http://sagadre.github.io/"><span class="image fit"
+									style="margin-bottom: 0.5em;"><img src="images/samir-thumbnail.png" alt=""
+										style="border-radius: 50%;" /></span>Samir Yitzhak Gadre <sup>1</sup></a></div>
+						<div class="2u" style="font-size: 0.7em; line-height: 1.5em; text-align: center;"><a
+								href="https://mitchellnw.github.io/"><span class="image fit"
+									style="margin-bottom: 0.5em;"><img src="images/mitchell-thumbnail.png" alt=""
+										style="border-radius: 50%;" /></span>Mitchell Wortsman <sup>2</sup></a></div>
+						<div class="2u" style="font-size: 0.7em; line-height: 1.5em; text-align: center;"><a
+								href="https://gabrielilharco.com/"><span class="image fit"
+									style="margin-bottom: 0.5em;"><img src="images/gabriel-thumbnail.png" alt=""
+										style="border-radius: 50%;" /></span>Gabriel Ilharco <sup>2</sup></a></div>
+						<div class="2u" style="font-size: 0.7em; line-height: 1.5em; text-align: center;"><a
+								href="https://people.csail.mit.edu/ludwigs/"><span class="image fit"
+									style="margin-bottom: 0.5em;"><img src="images/ludwig-thumbnail.png" alt=""
+										style="border-radius: 50%;" /></span>Ludwig Schmidt <sup>2</sup></a></div>
+						<div class="2u" style="font-size: 0.7em; line-height: 1.5em; text-align: center;"><a
+								href="http://shurans.github.io/"><span class="image fit"
+									style="margin-bottom: 0.5em;"><img src="images/shuran-thumbnail.png" alt=""
+										style="border-radius: 50%;" /></span>Shuran Song <sup>1</sup></a></div>
+
+					</div>
+				</div>
+			</section>
+			<sup>1</sup> Columbia University&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<sup>2</sup> University of
+			Washington&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+			<div class="row" style="margin-top: 1em">
+				<div class="12u$ 12u$(xsmall)">
+					<h3>Bibtex</h3>
+					<pre><code>@article {gadre2022cow,
+	title={CLIP on Wheels: Open-Vocabulary Models are (Almost) Zero-Shot Object Navigators},
+	author={Gadre, Samir Yitzhak and Wortsman, Mitchell and Ilharco, Gabriel and Schmidt, Ludwig and Song, Shuran},
+	journal={arXiv},
+	year={2022}
+}</code>
+							</pre>
+				</div>
+			</div>
+			<!-- <hr / style="margin-top: 1em"> -->
+
+			<!-- <div class="row">
+				<div class="12u$ 12u$(xsmall)" style="text-align: center;">
+					<h3>Technical Summary Video (with audio)</h3>
+					<iframe width="640" height="360" src="https://www.youtube.com/embed/dNug1l-BcnM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</div> -->
+
+			<hr / style="margin-top: 1em">
+			<h3>Acknowledgements</h3>
+			<p align="justify"> We would like to thank Jessie Chapman, Huy Ha, Sachit Menon, and Sarah Pratt for
+				valuable discussion and feedback. We would also like to thank Luca Weihs for technical help with <a
+					href="https://allenact.org/">AllenAct</a>. This work was
+				supported in part by NSF CMMI-2037101, NSF IIS-2132519, and an Amazon
+				Research Award. The views and conclusions contained herein are those of the authors and should not be
+				interpreted as necessarily representing the official policies, either expressed or implied, of the
+				sponsors.
+			</p>
+			<hr / style="margin-top: 1em">
+			<h3>Contact</h3>
+			<p>If you have any questions, please contact <a href="https://sagadre.github.io/">Samir</a>.</p>
+			<hr />
+		</section>
+	</div>
+
+	<!-- Footer -->
+	<footer id="footer">
+	</footer>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.poptrox.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+	<script src="assets/js/main.js"></script>
+</body>
+
+</html>
