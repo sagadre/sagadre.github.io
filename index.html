@@ -14,10 +14,9 @@
 </head>
 
 <style>
-  body
-   {
-       background-repeat: repeat;
-   }
+  body {
+    background-repeat: repeat;
+  }
 </style>
 
 <body onload="toggleNews();toggleNews()" background="images/noise_opt.png">
@@ -37,10 +36,10 @@
                     <name>Samir Yitzhak Gadre</name>
                   </p>
                   <p>
-                    I am a 3rd year Ph.D. student at Columbia University studying open-vocabulary models and zero-shot
-                    robotics.
-                    I am privileged to be advised by <a href="https://www.cs.columbia.edu/~shurans/">Shuran Song</a>.
-                    I am also fortunate to receive mentorship from <a href="https://ehsanik.github.io/">Kiana
+                    I am a 3rd year Ph.D. student at Columbia University studying large datasets, models and their
+                    application to vision, language, and robotics tasks.
+                    I am privileged to be advised by <a href="https://www.cs.columbia.edu/~shurans/">Shuran Song</a> and
+                    fortunate to receive mentorship from <a href="https://ehsanik.github.io/">Kiana
                       Ehsani</a>, <a href="https://roozbehm.info/">Roozbeh Mottaghi</a>, and <a
                       href="https://people.csail.mit.edu/ludwigs/">Ludwig Schmidt</a>. My work is supported by
                     a Columbia Presidential Fellowship and a NSF Graduate Research Fellowship.
@@ -50,8 +49,7 @@
                   Understanding team, where I was lucky to work with <a
                     href="https://www.linkedin.com/in/harpreet-sawhney-2b024b28/">Harpreet Sawhney</a> and <a
                     href="https://www.linkedin.com/in/ning-xu-5a687896/">Ning Xu</a> on <a
-                    href="https://azure.microsoft.com/en-us/services/object-anchors/#overview">Object Anchors</a>. With
-                  their support, I developed a passion for computer vision.
+                    href="https://azure.microsoft.com/en-us/services/object-anchors/#overview">Object Anchors</a>.
                   <p>
                     Prior to Microsoft, I was an undergrad at Brown University. I had a fantastic
                     experience working with <a href="http://cs.brown.edu/people/gdk/">George Konidaris</a> and <a
@@ -88,6 +86,10 @@
           <table width="100%" align="center" border="0" cellpadding="20">
             <tbody>
               <ul>
+                <li>[Apr 2023] New preprint: <a href="https://arxiv.org/abs/2208.05592">Multimodal C4 (MMC4)</a>, led by
+                  <a href="https://wanrong-zhu.com/">Wanrong Zhu</a> and <a href="https://jmhessel.com/">Jack
+                    Hessel</a>.
+                </li>
                 <li>[Aug 2022] New preprint: <a href="https://arxiv.org/abs/2208.05592">Patching open-vocabulary models
                     by interpolating weights (PAINT)</a> (NeurIPS 2022).</li>
                 <li>[July 2022] New preprint: <a href="https://arxiv.org/abs/2207.08997">Structure from Action
@@ -97,7 +99,8 @@
                     Tutorial</a> I helped organize.</li>
                 <li>[May 2022] Returning to <a href="https://prior.allenai.org/">AI2
                     PRIOR</a> for another internship.</li>
-                <li>[Mar 2022] New preprint: <a href="https://arxiv.org/abs/2203.10421">CLIP on Wheels (CoW)</a> (CVPR 2023).</li>
+                <li>[Mar 2022] New preprint: <a href="https://arxiv.org/abs/2203.10421">CLIP on Wheels (CoW)</a> (CVPR
+                  2023).</li>
                 <li>[Mar 2022] New preprint: <a href="https://arxiv.org/abs/2203.05482">Model soups</a>, led by <a
                     href="https://mitchellnw.github.io/">Mitchell Wortsman</a> (ICML 2022).</li>
                 <li>[Mar 2022] New preprint: <a href="https://arxiv.org/abs/2203.17251">Continuous Scene
@@ -168,11 +171,43 @@
 
               <tr onmouseout="end_user_stop()" onmouseover="end_user_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
+                  <img src="images/mmc4_logo.png" , height="50" , width="180">
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="https://arxiv.org/abs/2304.06939">
+                    <papertitle>Multimodal C4: An Open, Billion-scale Corpus of Images Interleaved With Text
+                    </papertitle>
+                  </a>
+                  <br>
+                  <a href="https://wanrong-zhu.com/">Wanrong Zhu*</a>,
+                  <a href="https://jmhessel.com/">Jack Hassel*</a>,
+                  <a href="https://anas-awadalla.streamlit.app/">Anas Awadalla</a>,
+                  <strong>Samir Yitzhak Gadre</strong>,
+                  <a href="https://jessedodge.github.io/">Jesse Dodge</a>,
+                  Alex Fang,
+                  <a href="https://yj-yu.github.io/home/">Youngjae Yu</a>,
+                  <a href="https://people.csail.mit.edu/ludwigs/">Ludwig Schmidt</a>,
+                  <a href="https://sites.cs.ucsb.edu/~william/">William Yang Wang</a>,
+                  <a href="https://homes.cs.washington.edu/~yejin/">Yejin Choi</a>
+                  <br>
+                  <em>arXiv</em>, 2023
+                  <br>
+                  <a href="https://arxiv.org/abs/2304.06939">arXiv</a> | <a
+                    href="https://github.com/allenai/mmc4">code</a>
+                  <p>
+                    A billion-scale dataset of interleaved images and text.
+                  </p>
+                </td>
+              </tr>
+
+              <tr onmouseout="end_user_stop()" onmouseover="end_user_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
                   <img src="images/cow2.jpg" , height="120" , width="180">
                 </td>
                 <td style="padding:20px;width:75%;vertical-align:middle">
                   <a href="https://arxiv.org/abs/2203.10421">
-                    <papertitle>CoWs on Pasture: Baselines and Benchmarks for Language-Driven Zero-Shot Object Navigation
+                    <papertitle>CoWs on Pasture: Baselines and Benchmarks for Language-Driven Zero-Shot Object
+                      Navigation
                     </papertitle>
                   </a>
                   <br>
@@ -184,8 +219,8 @@
                   <br>
                   <em>CVPR</em>, 2023
                   <br>
-                  <a href="data/gadre2022cow.bib">bibtex</a> | <a
-                    href="https://https://cow.cs.columbia.edu/">website</a> | <a
+                  <a href="https://arxiv.org/abs/2203.10421">arXiv</a> | <a
+                    href="https://cow.cs.columbia.edu/">website</a> | <a
                     href="https://github.com/columbia-ai-robotics/cow">code</a>
                   <p>
                     We study how to turn existing zero-shot vision-and-language models (e.g., CLIP) into zero-shot
@@ -215,9 +250,9 @@
                   <br>
                   <em>NeurIPS</em>, 2022
                   <br>
-                  <a href="data/ilharco2022paint.bib">bibtex</a> | <a
-                    href="https://model-patching.github.io/">website (with demo!)</a> | <a
-                    href="https://github.com/mlfoundations/patching">code</a>
+                  <a href="https://arxiv.org/abs/2208.05592">arXiv</a> | <a
+                    href="https://model-patching.github.io/">website
+                    (with demo!)</a> | <a href="https://github.com/mlfoundations/patching">code</a>
                   <p>
                     We introduce PAINT to improve performance on tasks where pre-trained open-vocabulary models
                     struggle, while maintaining performance on tasks they are already performant on.
@@ -242,7 +277,7 @@
                   <br>
                   <em>arXiv</em>, 2022
                   <br>
-                  <a href="data/nie2022sfa.bib">bibtex</a> | More coming soon!
+                  <a href="https://arxiv.org/abs/2207.08997">arXiv</a> | More coming soon!
                   <p>
                     We learn how to interact with 3D articulated objects to reconstruct their parts and discover joint
                     constraints.
@@ -273,9 +308,8 @@
                   <br>
                   <em>ICML</em>, 2022
                   <br>
-                  <a href="data/wortsman2022soups.bib">bibtex</a> | <a
+                  <a href="https://arxiv.org/abs/2203.05482">arXiv</a> | <a
                     href="https://github.com/mlfoundations/model-soups">code</a>
-                  <!-- <a href="https://atp.cs.columbia.edu/">website (with demo!)</a> -->
                   <p>
                     We average the weights of many models (ingredients) fine-tuned with different hyperparameters. The
                     resulting soup outperforms the individual ingredients.
@@ -299,7 +333,7 @@
                   <br>
                   <em>CVPR</em>, 2022
                   <br>
-                  <a href="data/gadre2022csr.bib">bibtex</a> | <a
+                  <a href="https://arxiv.org/abs/2203.17251">arXiv</a> | <a
                     href="https://prior.allenai.org/projects/csr">website</a> | <a
                     href="https://github.com/allenai/CSR">code</a>
                   <p>
@@ -326,7 +360,7 @@
                   <br>
                   <em>ICCV</em>, 2021
                   <br>
-                  <a href="data/gadre2021act.bib">bibtex</a> |
+                  <a href="https://arxiv.org/abs/2105.01047">arXiv</a> |
                   <a href="https://atp.cs.columbia.edu/">website (with demo!)</a>
                   <p>
                     We learn multi-step interaction with articulated objects to (1) discover the number of parts and (2)
@@ -353,7 +387,7 @@
                   <br>
                   <em>ICRA</em>, 2019
                   <br>
-                  <a href="data/Gadre2019.bib">bibtex</a>
+                  <a href="https://cs.brown.edu/people/gdk/pubs/end_user_prog_mr.pdf">pdf</a>
                   <p>
                     Mixed reality robot programming interface for pick-and-place tasks.
                   </p>
@@ -374,7 +408,7 @@
                   <br>
                   <em>Brown University Undergraduate Honors Thesis</em>, 2018
                   <br>
-                  <a href="data/Gadre2018.bib">bibtex</a>
+                  <a href="http://cs.brown.edu/research/pubs/theses/ugrad/2018/gadre.samir.pdf">pdf</a>
                   <p>
                     Mixed reality learning from demonstration system for pick-and-place tasks.
                   </p>
