@@ -86,6 +86,7 @@
           <table width="100%" align="center" border="0" cellpadding="20">
             <tbody>
               <ul>
+                <li>[Apr 2023] New preprint: <a href="https://arxiv.org/abs/2304.14108">DataComp</a>.</li>
                 <li>[Apr 2023] New preprint: <a href="https://arxiv.org/abs/2208.05592">Multimodal C4 (MMC4)</a>, led by
                   <a href="https://wanrong-zhu.com/">Wanrong Zhu</a> and <a href="https://jmhessel.com/">Jack
                     Hessel</a>.
@@ -171,354 +172,411 @@
 
               <tr onmouseout="end_user_stop()" onmouseover="end_user_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
-                  <img src="images/mmc4_logo.png" , height="50" , width="180">
+                  <img src="images/datacomp.png" , height="50" , width="180">
                 </td>
                 <td style="padding:20px;width:75%;vertical-align:middle">
-                  <a href="https://arxiv.org/abs/2304.06939">
-                    <papertitle>Multimodal C4: An Open, Billion-scale Corpus of Images Interleaved With Text
+                  <a href="https://arxiv.org/abs/2304.14108">
+                    <papertitle>DataComp: In search of the next generation of multimodal datasets
                     </papertitle>
                   </a>
                   <br>
-                  <a href="https://wanrong-zhu.com/">Wanrong Zhu*</a>,
-                  <a href="https://jmhessel.com/">Jack Hassel*</a>,
-                  <a href="https://anas-awadalla.streamlit.app/">Anas Awadalla</a>,
-                  <strong>Samir Yitzhak Gadre</strong>,
-                  <a href="https://jessedodge.github.io/">Jesse Dodge</a>,
-                  Alex Fang,
-                  <a href="https://yj-yu.github.io/home/">Youngjae Yu</a>,
-                  <a href="https://people.csail.mit.edu/ludwigs/">Ludwig Schmidt</a>,
-                  <a href="https://sites.cs.ucsb.edu/~william/">William Yang Wang</a>,
-                  <a href="https://homes.cs.washington.edu/~yejin/">Yejin Choi</a>
+                  <strong>Samir Yitzhak Gadre*</strong>,
+                  <a href="http://gabrielilharco.com/">Gabriel Ilharco*</a>,
+                  Alex Fang*,
+                  <a href="https://www.linkedin.com/in/jonathan-hayase-5ab849128">Jonathan Hayase</a>,
+                  <a href="https://georgiossmyrnis.github.io/">Georgios Smyrnis</a>,
+                  <a href="https://thaonguyen19.github.io/">Thao Nguyen</a>,
+                  <a href="https://www.ryanmarten.com/">Ryan Marten</a>,
+                  <a href="https://mitchellnw.github.io/">Mitchell Wortsman</a>,
+                  <a href="https://djghosh13.github.io/">Dhruba Ghosh</a>,
+                  <a href="https://jieyuz2.github.io/">Jieyu Zhang</a>,
+                  Eyal Orgad,
+                  <a href="https://rahimentezari.github.io/">Rahim Entezari</a>,
+                  <a href="https://giannisdaras.github.io/">Giannis Daras</a>,
+                  <a href="https://sarahpratt.github.io/">Sarah Pratt</a>,
+                  <a href="https://vkramanuj.github.io/">Vivek Ramanujan</a>,
+                  <a href="https://yonatanbitton.github.io/">Yonatan Bitton</a>,
+                  <a href="https://sites.google.com/uw.edu/kalyanimarathe/home?authuser=0">Kalyani Marathe</a>,
+                  <a href="https://stephen.mussmann.xyz/">Stephen Mussmann</a>,
+                  <a href="https://ro.linkedin.com/in/richardvencu">Richard Vencu</a>,
+                  <a href="https://mehdidc.github.io/">Mehdi Cherti</a>,
+                  <a href="http://www.ranjaykrishna.com/index.html">Ranjay Krishna</a>,
+                  <a href="https://koh.pw/">Pang Wei Koh</a>,
+                  <a href="http://www.olgasaukh.com/">Olga Saukh</a>,
+                  <a href="https://ajratner.github.io/">Alexander Ratner</a>,
+                  <a href="https://www.cs.columbia.edu/~shurans/">Shuran Song</a>,
+                  <a href="https://homes.cs.washington.edu/~hannaneh/">Hannaneh Hajishirzi</a>,
+                  <a href="https://homes.cs.washington.edu/~ali/">Ali Farhadi</a>,
+                  <a href="https://rom1504.fr/">Romain Beaumont</a>,
+                  <a href="https://homes.cs.washington.edu/~sewoong/">Sewoong Oh</a>,
+                  <a href="https://users.ece.utexas.edu/~dimakis/">Alex Dimakis</a>,
+                  <a href="https://de.linkedin.com/in/jenia-jitsev-11654427">Jenia Jitsev</a>,
+                  <a href="https://www.cs.tau.ac.il/~ycarmon/">Yair Carmon</a>,
+                  <a href="http://vaishaal.com/">Vaishaal Shankar</a>,
+                  <a href="https://people.csail.mit.edu/ludwigs/">Ludwig Schmidt</a>
                   <br>
                   <em>arXiv</em>, 2023
                   <br>
-                  <a href="https://arxiv.org/abs/2304.06939">arXiv</a> | <a
-                    href="https://github.com/allenai/mmc4">code</a>
+                  <a href="https://arxiv.org/abs/2304.14108">arXiv</a> |
+                  <a href="https://datacomp.ai">website</a> |
+                  <a href="https://github.com/mlfoundations/datacomp">code</a>
                   <p>
-                    A billion-scale dataset of interleaved images and text.
+                    A benchmark where model training is fixed and participants iterate on data curation strategies. We
+                    release a dataset of 12.8B image-text pairs, the largest public dataset of its kind to date. On a
+                    1.4B
+                    subset, we outperform OpenAI CLIP models trained with the same compute budget.
                   </p>
                 </td>
               </tr>
 
-              <tr onmouseout="end_user_stop()" onmouseover="end_user_start()">
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <img src="images/cow2.jpg" , height="120" , width="180">
-                </td>
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                  <a href="https://arxiv.org/abs/2203.10421">
-                    <papertitle>CoWs on Pasture: Baselines and Benchmarks for Language-Driven Zero-Shot Object
-                      Navigation
-                    </papertitle>
-                  </a>
-                  <br>
-                  <strong>Samir Yitzhak Gadre</strong>,
-                  <a href="https://mitchellnw.github.io/">Mitchell Wortsman</a>,
-                  <a href="http://gabrielilharco.com/">Gabriel Ilharco</a>,
-                  <a href="https://people.csail.mit.edu/ludwigs/">Ludwig Schmidt</a>,
-                  <a href="https://www.cs.columbia.edu/~shurans/">Shuran Song</a>
-                  <br>
-                  <em>CVPR</em>, 2023
-                  <br>
-                  <a href="https://arxiv.org/abs/2203.10421">arXiv</a> | <a
-                    href="https://cow.cs.columbia.edu/">website</a> | <a
-                    href="https://github.com/columbia-ai-robotics/cow">code</a>
-                  <p>
-                    We study how to turn existing zero-shot vision-and-language models (e.g., CLIP) into zero-shot
-                    object navigators.
-                  </p>
-                </td>
-              </tr>
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <img src="images/mmc4_logo.png" , height="50" , width="180">
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://arxiv.org/abs/2304.06939">
+                  <papertitle>Multimodal C4: An Open, Billion-scale Corpus of Images Interleaved With Text
+                  </papertitle>
+                </a>
+                <br>
+                <a href="https://wanrong-zhu.com/">Wanrong Zhu*</a>,
+                <a href="https://jmhessel.com/">Jack Hassel*</a>,
+                <a href="https://anas-awadalla.streamlit.app/">Anas Awadalla</a>,
+                <strong>Samir Yitzhak Gadre</strong>,
+                <a href="https://jessedodge.github.io/">Jesse Dodge</a>,
+                Alex Fang,
+                <a href="https://yj-yu.github.io/home/">Youngjae Yu</a>,
+                <a href="https://people.csail.mit.edu/ludwigs/">Ludwig Schmidt</a>,
+                <a href="https://sites.cs.ucsb.edu/~william/">William Yang Wang</a>,
+                <a href="https://homes.cs.washington.edu/~yejin/">Yejin Choi</a>
+                <br>
+                <em>arXiv</em>, 2023
+                <br>
+                <a href="https://arxiv.org/abs/2304.06939">arXiv</a> | <a
+                  href="https://github.com/allenai/mmc4">code</a>
+                <p>
+                  A billion-scale dataset of interleaved images and text.
+                </p>
+              </td>
+      </tr>
 
-              <tr onmouseout="end_user_stop()" onmouseover="end_user_start()">
-                <td style="padding:35px;width:25%;vertical-align:middle">
-                  <img src="images/paint.jpeg" , height="120" , width="150">
-                </td>
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                  <a href="https://arxiv.org/abs/2208.05592">
-                    <papertitle>Patching open-vocabulary models by interpolating weights
-                    </papertitle>
-                  </a>
-                  <br>
-                  <a href="http://gabrielilharco.com/">Gabriel Ilharco*</a>,
-                  <a href="https://mitchellnw.github.io/">Mitchell Wortsman*</a>,
-                  <strong>Samir Yitzhak Gadre*</strong>,
-                  <a href="https://www.cs.columbia.edu/~shurans/">Shuran Song</a>,
-                  <a href="https://homes.cs.washington.edu/~hannaneh/">Hannaneh Hajishirzi</a>,
-                  <a href="https://simonster.com/">Simon Kornblith</a>,
-                  <a href="https://homes.cs.washington.edu/~ali/">Ali Farhadi</a>,
-                  <a href="https://people.csail.mit.edu/ludwigs/">Ludwig Schmidt</a>
-                  <br>
-                  <em>NeurIPS</em>, 2022
-                  <br>
-                  <a href="https://arxiv.org/abs/2208.05592">arXiv</a> | <a
-                    href="https://model-patching.github.io/">website
-                    (with demo!)</a> | <a href="https://github.com/mlfoundations/patching">code</a>
-                  <p>
-                    We introduce PAINT to improve performance on tasks where pre-trained open-vocabulary models
-                    struggle, while maintaining performance on tasks they are already performant on.
-                  </p>
-                </td>
-
-              <tr onmouseout="end_user_stop()" onmouseover="end_user_start()">
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <img src="images/drawer.gif" , height="120" , width="180">
-                </td>
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                  <a href="https://arxiv.org/abs/2207.08997">
-                    <papertitle>Structure From Action: Learning Interactions for Articulated Object 3D Structure
-                      Discovery
-                    </papertitle>
-                  </a>
-                  <br>
-                  <a href="https://neilnie.com/">Neil Nie</a>,
-                  <strong>Samir Yitzhak Gadre</strong>,
-                  <a href="https://ehsanik.github.io/">Kiana Ehsani</a>,
-                  <a href="https://www.cs.columbia.edu/~shurans/">Shuran Song</a>
-                  <br>
-                  <em>arXiv</em>, 2022
-                  <br>
-                  <a href="https://arxiv.org/abs/2207.08997">arXiv</a> | More coming soon!
-                  <p>
-                    We learn how to interact with 3D articulated objects to reconstruct their parts and discover joint
-                    constraints.
-                  </p>
-                </td>
-
-              <tr onmouseout="end_user_stop()" onmouseover="end_user_start()">
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <img src="images/soup.jpeg" width="180" height="120">
-                </td>
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                  <a href="https://arxiv.org/abs/2203.05482">
-                    <papertitle>Model soups: averaging weights of multiple fine-tuned models improves accuracy without
-                      increasing inference time</papertitle>
-                  </a>
-                  <br>
-                  <a href="https://mitchellnw.github.io/">Mitchell Wortsman</a>,
-                  <a href="http://gabrielilharco.com/">Gabriel Ilharco</a>,
-                  <strong>Samir Yitzhak Gadre</strong>,
-                  <a href="https://twitter.com/beccaroelofs">Rebecca Roelofs</a>,
-                  <a href="https://raphagl.com/">Raphael Gontijo-Lopes</a>,
-                  <a href="http://www.arimorcos.com/">Ari S. Morcos</a>,
-                  <a href="https://hsnamkoong.github.io/">Hongseok Namkoong</a>,
-                  <a href="https://homes.cs.washington.edu/~ali/">Ali Farhadi</a>,
-                  <a href="https://www.cs.tau.ac.il/~ycarmon/">Yair Carmon*</a>,
-                  <a href="https://simonster.com/">Simon Kornblith*</a>,
-                  <a href="https://people.csail.mit.edu/ludwigs/">Ludwig Schmidt*</a>
-                  <br>
-                  <em>ICML</em>, 2022
-                  <br>
-                  <a href="https://arxiv.org/abs/2203.05482">arXiv</a> | <a
-                    href="https://github.com/mlfoundations/model-soups">code</a>
-                  <p>
-                    We average the weights of many models (ingredients) fine-tuned with different hyperparameters. The
-                    resulting soup outperforms the individual ingredients.
-                  </p>
-                </td>
-              </tr>
-
-              <tr onmouseout="end_user_stop()" onmouseover="end_user_start()">
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <img src="images/csr.jpg" width="180" height="120">
-                </td>
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                  <a href="https://arxiv.org/abs/2203.17251">
-                    <papertitle>Continuous Scene Representations for Embodied AI</papertitle>
-                  </a>
-                  <br>
-                  <strong>Samir Yitzhak Gadre</strong>,
-                  <a href="https://ehsanik.github.io/">Kiana Ehsani</a>,
-                  <a href="https://www.cs.columbia.edu/~shurans/">Shuran Song</a>,
-                  <a href="https://roozbehm.info/">Roozbeh Mottaghi</a>
-                  <br>
-                  <em>CVPR</em>, 2022
-                  <br>
-                  <a href="https://arxiv.org/abs/2203.17251">arXiv</a> | <a
-                    href="https://prior.allenai.org/projects/csr">website</a> | <a
-                    href="https://github.com/allenai/CSR">code</a>
-                  <p>
-                    We employ a contrastive loss to embed relationships between objects as features. We show how our
-                    representation can be used downstream for visual room rearrangement without any additional training.
-                    <!-- We learn multi-step interaction with articulated objects to (1) discover the number of parts and (2) find part segmentation masks, all without semantic labels. -->
-                  </p>
-                </td>
-              </tr>
-
-              <tr onmouseout="end_user_stop()" onmouseover="end_user_start()">
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <img src="images/atp.jpeg">
-                </td>
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                  <a href="https://arxiv.org/abs/2105.01047">
-                    <papertitle>Act the Part: Learning Interaction Strategies for Articulated Object Part Discovery
-                    </papertitle>
-                  </a>
-                  <br>
-                  <strong>Samir Yitzhak Gadre</strong>,
-                  <a href="https://ehsanik.github.io/">Kiana Ehsani</a>,
-                  <a href="https://www.cs.columbia.edu/~shurans/">Shuran Song</a>
-                  <br>
-                  <em>ICCV</em>, 2021
-                  <br>
-                  <a href="https://arxiv.org/abs/2105.01047">arXiv</a> |
-                  <a href="https://atp.cs.columbia.edu/">website (with demo!)</a>
-                  <p>
-                    We learn multi-step interaction with articulated objects to (1) discover the number of parts and (2)
-                    find part segmentation masks, all without semantic labels.
-                  </p>
-                </td>
-              </tr>
-
-              <tr onmouseout="end_user_stop()" onmouseover="end_user_start()">
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <img src="images/end_user.gif">
-                </td>
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                  <a href="http://cs.brown.edu/people/gdk/pubs/end_user_prog_mr.pdf">
-                    <papertitle>End-User Robot Programming Using Mixed Reality</papertitle>
-                  </a>
-                  <br>
-                  <strong>Samir Yitzhak Gadre</strong>,
-                  <a href="http://cs.brown.edu/people/er35/">Eric Rosen</a>,
-                  <a href="https://www.linkedin.com/in/garychien/">Gary Chien</a>,
-                  <a href="https://www.elizabethkphillips.com/">Elizabeth Phillips</a>,
-                  <a href="http://cs.brown.edu/people/stellex/">Stefanie Tellex</a>,
-                  <a href="http://cs.brown.edu/people/gdk/">George Konidaris</a>
-                  <br>
-                  <em>ICRA</em>, 2019
-                  <br>
-                  <a href="https://cs.brown.edu/people/gdk/pubs/end_user_prog_mr.pdf">pdf</a>
-                  <p>
-                    Mixed reality robot programming interface for pick-and-place tasks.
-                  </p>
-                </td>
-              </tr>
-
-
-              <tr onmouseout="lfd_stop()" onmouseover="lfd_start()">
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <img src="images/lfd.gif">
-                </td>
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                  <a href="http://cs.brown.edu/research/pubs/theses/ugrad/2018/gadre.samir.pdf">
-                    <papertitle>Teaching Robots Using Mixed Reality</papertitle>
-                  </a>
-                  <br>
-                  <strong>Samir Yitzhak Gadre</strong>
-                  <br>
-                  <em>Brown University Undergraduate Honors Thesis</em>, 2018
-                  <br>
-                  <a href="http://cs.brown.edu/research/pubs/theses/ugrad/2018/gadre.samir.pdf">pdf</a>
-                  <p>
-                    Mixed reality learning from demonstration system for pick-and-place tasks.
-                  </p>
-                </td>
-              </tr>
-
-              <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-                <tbody>
-                  <tr>
-                    <td>
-                      <heading>Service</heading>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-              <table width="100%" align="center" border="0" cellpadding="20">
-                <tbody>
-                  <tr>
-                    <td style="padding:20px;width:25%;vertical-align:middle"><img src="images/review.jpg" height="166" ,
-                        width="166"></td>
-                    <td width="75%" valign="center">
-                      ECCV 2020; ICML 2022; IROS 2022; ICLR 2023; ICRA 2023
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td style="padding:20px;width:25%;vertical-align:middle;text-align:center"><img
-                        src="images/columbia.jpg" height="166" , width="166"></td>
-                    <td width="75%" valign="center">
-                      Pre-submission Application Review (PAR); co-organizer, fall 2021.
-                      <br>
-                      <br>
-                      <a href="https://www.womeninscienceatcolumbia.org/">WiSC</a>; mentor, fall 2020, spring 2021.
-                      <br>
-                      <br>
-                      PAR; application reader, fall 2020.
-                      <br>
-                      <br>
-                      <a href="https://sites.google.com/view/coms4733-fall2020/home?pli=1&authuser=1">COMS 4733:
-                        Computational Aspects of Robotics</a>; Graduate Teaching Assistant, fall 2020.
-                      <br>
-                      <br>
-                      COMS 6998: Topics in Robot Learning; Graduate Teaching Assistant, spring 2021.
-                      <a></a>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td style="padding:20px;width:25%;vertical-align:middle;text-align:center"><img
-                        src="images/brown_cs.jpg"></td>
-                    <td width="75%" valign="center">
-                      <a href="http://cs.brown.edu/courses/cs016/">CS16: Algorithms and Data Structures</a>; Teaching
-                      Assistant, spring 2018.
-                      <br>
-                      <br>
-                      <a href="http://cs.brown.edu/courses/cs015/">CS15: Object Oriented Programming</a>; Teaching
-                      Assistant, fall 2016.
-
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-
-              <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-                <tbody>
-                  <tr>
-                    <td>
-                      <heading>More!</heading>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-              <table width="100%" align="center" border="0" cellpadding="20">
-                <tbody>
-                  <tr>
-                    <!-- <td style="padding:20px;width:25%;vertical-align:middle"><img src="images/review.jpg" height="166" ,
-                        width="166"></td> -->
-                    <td width="75%" valign="center">
-                      Releasing my NSF GRFP application, inspired by others, whose materials were super helpful to me
-                      [<a href="data/nsf_personal.pdf">personal</a>, <a href="data/nsf_research.pdf">research</a>]
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-
-              <table
-                style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                <tbody>
-                  <tr>
-                    <td style="padding:0px">
-                      <br>
-                      <br>
-                      <br>
-                      <br>
-                      <br>
-                      <br>
-                      <br>
-                      <br>
-                      <br>
-                      <br>
-                      <br>
-                      <p style="text-align:right;font-size:small;">
-                        Template modified from the <a href="https://github.com/jonbarron/jonbarron_website">Jon
-                          Barron</a> original.
-                      </p>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+      <tr onmouseout="end_user_stop()" onmouseover="end_user_start()">
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <img src="images/cow2.jpg" , height="120" , width="180">
         </td>
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <a href="https://arxiv.org/abs/2203.10421">
+            <papertitle>CoWs on Pasture: Baselines and Benchmarks for Language-Driven Zero-Shot Object
+              Navigation
+            </papertitle>
+          </a>
+          <br>
+          <strong>Samir Yitzhak Gadre</strong>,
+          <a href="https://mitchellnw.github.io/">Mitchell Wortsman</a>,
+          <a href="http://gabrielilharco.com/">Gabriel Ilharco</a>,
+          <a href="https://people.csail.mit.edu/ludwigs/">Ludwig Schmidt</a>,
+          <a href="https://www.cs.columbia.edu/~shurans/">Shuran Song</a>
+          <br>
+          <em>CVPR</em>, 2023
+          <br>
+          <a href="https://arxiv.org/abs/2203.10421">arXiv</a> | <a href="https://cow.cs.columbia.edu/">website</a> | <a
+            href="https://github.com/columbia-ai-robotics/cow">code</a>
+          <p>
+            We study how to turn existing zero-shot vision-and-language models (e.g., CLIP) into zero-shot
+            object navigators.
+          </p>
+        </td>
+      </tr>
+
+      <tr onmouseout="end_user_stop()" onmouseover="end_user_start()">
+        <td style="padding:35px;width:25%;vertical-align:middle">
+          <img src="images/paint.jpeg" , height="120" , width="150">
+        </td>
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <a href="https://arxiv.org/abs/2208.05592">
+            <papertitle>Patching open-vocabulary models by interpolating weights
+            </papertitle>
+          </a>
+          <br>
+          <a href="http://gabrielilharco.com/">Gabriel Ilharco*</a>,
+          <a href="https://mitchellnw.github.io/">Mitchell Wortsman*</a>,
+          <strong>Samir Yitzhak Gadre*</strong>,
+          <a href="https://www.cs.columbia.edu/~shurans/">Shuran Song</a>,
+          <a href="https://homes.cs.washington.edu/~hannaneh/">Hannaneh Hajishirzi</a>,
+          <a href="https://simonster.com/">Simon Kornblith</a>,
+          <a href="https://homes.cs.washington.edu/~ali/">Ali Farhadi</a>,
+          <a href="https://people.csail.mit.edu/ludwigs/">Ludwig Schmidt</a>
+          <br>
+          <em>NeurIPS</em>, 2022
+          <br>
+          <a href="https://arxiv.org/abs/2208.05592">arXiv</a> | <a href="https://model-patching.github.io/">website
+            (with demo!)</a> | <a href="https://github.com/mlfoundations/patching">code</a>
+          <p>
+            We introduce PAINT to improve performance on tasks where pre-trained open-vocabulary models
+            struggle, while maintaining performance on tasks they are already performant on.
+          </p>
+        </td>
+
+      <tr onmouseout="end_user_stop()" onmouseover="end_user_start()">
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <img src="images/drawer.gif" , height="120" , width="180">
+        </td>
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <a href="https://arxiv.org/abs/2207.08997">
+            <papertitle>Structure From Action: Learning Interactions for Articulated Object 3D Structure
+              Discovery
+            </papertitle>
+          </a>
+          <br>
+          <a href="https://neilnie.com/">Neil Nie</a>,
+          <strong>Samir Yitzhak Gadre</strong>,
+          <a href="https://ehsanik.github.io/">Kiana Ehsani</a>,
+          <a href="https://www.cs.columbia.edu/~shurans/">Shuran Song</a>
+          <br>
+          <em>arXiv</em>, 2022
+          <br>
+          <a href="https://arxiv.org/abs/2207.08997">arXiv</a> | More coming soon!
+          <p>
+            We learn how to interact with 3D articulated objects to reconstruct their parts and discover joint
+            constraints.
+          </p>
+        </td>
+
+      <tr onmouseout="end_user_stop()" onmouseover="end_user_start()">
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <img src="images/soup.jpeg" width="180" height="120">
+        </td>
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <a href="https://arxiv.org/abs/2203.05482">
+            <papertitle>Model soups: averaging weights of multiple fine-tuned models improves accuracy without
+              increasing inference time</papertitle>
+          </a>
+          <br>
+          <a href="https://mitchellnw.github.io/">Mitchell Wortsman</a>,
+          <a href="http://gabrielilharco.com/">Gabriel Ilharco</a>,
+          <strong>Samir Yitzhak Gadre</strong>,
+          <a href="https://twitter.com/beccaroelofs">Rebecca Roelofs</a>,
+          <a href="https://raphagl.com/">Raphael Gontijo-Lopes</a>,
+          <a href="http://www.arimorcos.com/">Ari S. Morcos</a>,
+          <a href="https://hsnamkoong.github.io/">Hongseok Namkoong</a>,
+          <a href="https://homes.cs.washington.edu/~ali/">Ali Farhadi</a>,
+          <a href="https://www.cs.tau.ac.il/~ycarmon/">Yair Carmon*</a>,
+          <a href="https://simonster.com/">Simon Kornblith*</a>,
+          <a href="https://people.csail.mit.edu/ludwigs/">Ludwig Schmidt*</a>
+          <br>
+          <em>ICML</em>, 2022
+          <br>
+          <a href="https://arxiv.org/abs/2203.05482">arXiv</a> | <a
+            href="https://github.com/mlfoundations/model-soups">code</a>
+          <p>
+            We average the weights of many models (ingredients) fine-tuned with different hyperparameters. The
+            resulting soup outperforms the individual ingredients.
+          </p>
+        </td>
+      </tr>
+
+      <tr onmouseout="end_user_stop()" onmouseover="end_user_start()">
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <img src="images/csr.jpg" width="180" height="120">
+        </td>
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <a href="https://arxiv.org/abs/2203.17251">
+            <papertitle>Continuous Scene Representations for Embodied AI</papertitle>
+          </a>
+          <br>
+          <strong>Samir Yitzhak Gadre</strong>,
+          <a href="https://ehsanik.github.io/">Kiana Ehsani</a>,
+          <a href="https://www.cs.columbia.edu/~shurans/">Shuran Song</a>,
+          <a href="https://roozbehm.info/">Roozbeh Mottaghi</a>
+          <br>
+          <em>CVPR</em>, 2022
+          <br>
+          <a href="https://arxiv.org/abs/2203.17251">arXiv</a> | <a
+            href="https://prior.allenai.org/projects/csr">website</a> | <a
+            href="https://github.com/allenai/CSR">code</a>
+          <p>
+            We employ a contrastive loss to embed relationships between objects as features. We show how our
+            representation can be used downstream for visual room rearrangement without any additional training.
+            <!-- We learn multi-step interaction with articulated objects to (1) discover the number of parts and (2) find part segmentation masks, all without semantic labels. -->
+          </p>
+        </td>
+      </tr>
+
+      <tr onmouseout="end_user_stop()" onmouseover="end_user_start()">
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <img src="images/atp.jpeg">
+        </td>
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <a href="https://arxiv.org/abs/2105.01047">
+            <papertitle>Act the Part: Learning Interaction Strategies for Articulated Object Part Discovery
+            </papertitle>
+          </a>
+          <br>
+          <strong>Samir Yitzhak Gadre</strong>,
+          <a href="https://ehsanik.github.io/">Kiana Ehsani</a>,
+          <a href="https://www.cs.columbia.edu/~shurans/">Shuran Song</a>
+          <br>
+          <em>ICCV</em>, 2021
+          <br>
+          <a href="https://arxiv.org/abs/2105.01047">arXiv</a> |
+          <a href="https://atp.cs.columbia.edu/">website (with demo!)</a>
+          <p>
+            We learn multi-step interaction with articulated objects to (1) discover the number of parts and (2)
+            find part segmentation masks, all without semantic labels.
+          </p>
+        </td>
+      </tr>
+
+      <tr onmouseout="end_user_stop()" onmouseover="end_user_start()">
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <img src="images/end_user.gif">
+        </td>
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <a href="http://cs.brown.edu/people/gdk/pubs/end_user_prog_mr.pdf">
+            <papertitle>End-User Robot Programming Using Mixed Reality</papertitle>
+          </a>
+          <br>
+          <strong>Samir Yitzhak Gadre</strong>,
+          <a href="http://cs.brown.edu/people/er35/">Eric Rosen</a>,
+          <a href="https://www.linkedin.com/in/garychien/">Gary Chien</a>,
+          <a href="https://www.elizabethkphillips.com/">Elizabeth Phillips</a>,
+          <a href="http://cs.brown.edu/people/stellex/">Stefanie Tellex</a>,
+          <a href="http://cs.brown.edu/people/gdk/">George Konidaris</a>
+          <br>
+          <em>ICRA</em>, 2019
+          <br>
+          <a href="https://cs.brown.edu/people/gdk/pubs/end_user_prog_mr.pdf">pdf</a>
+          <p>
+            Mixed reality robot programming interface for pick-and-place tasks.
+          </p>
+        </td>
+      </tr>
+
+
+      <tr onmouseout="lfd_stop()" onmouseover="lfd_start()">
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <img src="images/lfd.gif">
+        </td>
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <a href="http://cs.brown.edu/research/pubs/theses/ugrad/2018/gadre.samir.pdf">
+            <papertitle>Teaching Robots Using Mixed Reality</papertitle>
+          </a>
+          <br>
+          <strong>Samir Yitzhak Gadre</strong>
+          <br>
+          <em>Brown University Undergraduate Honors Thesis</em>, 2018
+          <br>
+          <a href="http://cs.brown.edu/research/pubs/theses/ugrad/2018/gadre.samir.pdf">pdf</a>
+          <p>
+            Mixed reality learning from demonstration system for pick-and-place tasks.
+          </p>
+        </td>
+      </tr>
+
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+        <tbody>
+          <tr>
+            <td>
+              <heading>Service</heading>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <table width="100%" align="center" border="0" cellpadding="20">
+        <tbody>
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle"><img src="images/review.jpg" height="166" ,
+                width="166"></td>
+            <td width="75%" valign="center">
+
+              ECCV: 2020; CVPR: 2023; ICLR: 2023; ICML: 2022, 2023; IROS: 2022; ICRA: 2023
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle;text-align:center"><img src="images/columbia.jpg"
+                height="166" , width="166"></td>
+            <td width="75%" valign="center">
+              Pre-submission Application Review (PAR); co-organizer, fall 2021.
+              <br>
+              <br>
+              <a href="https://www.womeninscienceatcolumbia.org/">WiSC</a>; mentor, fall 2020, spring 2021.
+              <br>
+              <br>
+              PAR; application reader, fall 2020.
+              <br>
+              <br>
+              <a href="https://sites.google.com/view/coms4733-fall2020/home?pli=1&authuser=1">COMS 4733:
+                Computational Aspects of Robotics</a>; Graduate Teaching Assistant, fall 2020.
+              <br>
+              <br>
+              COMS 6998: Topics in Robot Learning; Graduate Teaching Assistant, spring 2021.
+              <a></a>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle;text-align:center"><img src="images/brown_cs.jpg">
+            </td>
+            <td width="75%" valign="center">
+              <a href="http://cs.brown.edu/courses/cs016/">CS16: Algorithms and Data Structures</a>; Teaching
+              Assistant, spring 2018.
+              <br>
+              <br>
+              <a href="http://cs.brown.edu/courses/cs015/">CS15: Object Oriented Programming</a>; Teaching
+              Assistant, fall 2016.
+
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+        <tbody>
+          <tr>
+            <td>
+              <heading>More!</heading>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <table width="100%" align="center" border="0" cellpadding="20">
+        <tbody>
+          <tr>
+            <!-- <td style="padding:20px;width:25%;vertical-align:middle"><img src="images/review.jpg" height="166" ,
+                        width="166"></td> -->
+            <td width="75%" valign="center">
+              Releasing my NSF GRFP application, inspired by others, whose materials were super helpful to me
+              [<a href="data/nsf_personal.pdf">personal</a>, <a href="data/nsf_research.pdf">research</a>]
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table
+        style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <tbody>
+          <tr>
+            <td style="padding:0px">
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <p style="text-align:right;font-size:small;">
+                Template modified from the <a href="https://github.com/jonbarron/jonbarron_website">Jon
+                  Barron</a> original.
+              </p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
       </tr>
   </table>
 
